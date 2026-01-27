@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>OAuth2 Login Demo</title>
+</head>
+<body>
+    <h1>Welcome to Microservice 1</h1>
+    
+    <div th:if="${username}">
+        <h2>Login Successful!</h2>
+        <p>User: <span th:text="${username}"></span></p>
+        <p>Authorities: <span th:text="${authorities}"></span></p>
+        
+        <h3>Actions</h3>
+        <ul>
+            <li><a href="/customer">Test /customer Endpoint</a></li>
+        </ul>
+    </div>
+    
+    <div th:unless="${username}">
+        <p>You are not logged in.</p>
+        <a href="/oauth2/authorization/webapp">Login with Auth Server</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Private keys - DO NOT COMMIT
+keys/
+keys/archive/
+*.pem
+*.txt
+
+# Maven
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/

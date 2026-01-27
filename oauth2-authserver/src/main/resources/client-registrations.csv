@@ -1,0 +1,6 @@
+client_id,client_secret,roles,scopes,grant_types,redirect_uris
+inventoryclient,secret123,ROLE_ADMIN,read write delete,client_credentials,
+cartopsclient,secret456,ROLE_USER,read,client_credentials,
+reportsclient,secret789,ROLE_MANAGER,read write,client_credentials,
+webapp,webappSecret,,openid offline_access read write,authorization_code refresh_token,http://localhost:8080/login/oauth2/code/webapp
+mobileapp,mobileSecret,,openid read write,authorization_code,http://localhost:8080/login/oauth2/code/mobileapp

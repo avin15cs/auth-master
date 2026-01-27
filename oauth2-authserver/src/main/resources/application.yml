@@ -1,0 +1,22 @@
+server:
+  port: 8443
+  forward-headers-strategy: framework
+  servlet:
+    session:
+      cookie:
+        name: AUTH_JSESSIONID
+
+spring:
+  application:
+    name: oauth2-authorization-server
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+# Key Rotation Configuration
+security:
+  key-rotation:
+    interval-hours: 24  # Rotate RSA keys every 24 hours
+  jwt:
+    access-token-validity-minutes: 5  # JWT token expires in 60 minutes (1 hour)

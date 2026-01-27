@@ -1,0 +1,5 @@
+username,password,roles,enabled
+john.doe,password123,ROLE_CUSTOMER,true
+alice.smith,alice123,ROLE_CUSTOMER,true
+bob.jones,bob123,ROLE_CUSTOMER,true
+admin,admin123,ROLE_ADMIN,true
